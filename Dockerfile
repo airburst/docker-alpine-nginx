@@ -19,6 +19,7 @@ RUN	apk update && \
 		-nodes \
 		-subj /CN=localhost && \
 	mkdir /www && \
+	mkdir /var/run/nginx && \
 	apk del tzdata && \
 	rm -rf /var/cache/apk/*
 

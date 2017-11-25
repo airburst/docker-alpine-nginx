@@ -1,1 +1,1 @@
-docker run -p 80:80 -p 443:443 --name webapp -v /home/user/nginx/conf:/etc/nginx/conf.d -v /home/user/nginx/log:/var/log/nginx:rw airburst/alpine-nginx
+docker run -p 88:80 -p 444:443 --name webapp -v /home/user/nginx/conf:/etc/nginx/conf.d -v /home/user/nginx/log:/var/log/nginx airburst/docker-alpine-nginx
