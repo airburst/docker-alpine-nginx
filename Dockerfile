@@ -28,7 +28,7 @@ COPY etc/conf.d/default.conf /etc/nginx/conf.d/default.conf
 COPY etc/conf.d/ssl.conf /etc/nginx/conf.d/ssl.conf
 
 # Copy production build of web app
-COPY dist/**/* /usr/share/nginx/html
+COPY dist /usr/share/nginx/html
 
 # Expose volumes
 VOLUME ["/etc/nginx/conf.d", "/var/log/nginx", "/www"]
